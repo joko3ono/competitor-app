@@ -11,5 +11,11 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
+//= require jquery
+//= require bootstrap-sprockets
+//= require best_in_place
 //= require_tree .
+
+$(document).ready(function(){
+  $('.best_in_place').best_in_place();
+});

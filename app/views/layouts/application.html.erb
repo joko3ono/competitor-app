@@ -9,6 +9,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container <%= controller_name %>">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 main-container">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

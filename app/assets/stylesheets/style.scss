@@ -1,0 +1,9 @@
+$background: #e9e9e9;
+
+div.main-container {
+  background-color: $background;
+  border-radius: 15px;
+  min-height: 250px;
+  margin-top: 25px;
+  box-shadow: -3px 5px 5px darken($background, 15%);
+}
