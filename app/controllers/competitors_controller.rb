@@ -24,6 +24,8 @@ class CompetitorsController < ApplicationController
   private
 
   def competitor_params
-    params.require(:competitor).permit(:name, :business, :domain_id)
+    params
+      .require(:competitor)
+      .permit(:name, :business, :domain_id, :position)
   end
 end

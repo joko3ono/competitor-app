@@ -1,6 +1,7 @@
 <div class="modal fade" id="create-competitor" tabindex="-1" role="dialog">
   <%= form_for competitor, remote: true do |f| %>
     <%= f.hidden_field :domain_id %>
+    <%= f.hidden_field :position %>
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
