@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-md-12">
     <h3><%= "Competitor #{@domain.name}" %></h3>
-    <%= link_to('Add Competitor', new_competitor_path(domain_id: @domain.id), class: 'btn btn-primary', remote: true) if @domain.competitors.count < Domain::MAX_COMPETITORS %>
+    <%= link_to('Add Competitor', new_competitor_path(domain_id: @domain.id), id: 'add-competitor-button', class: "btn btn-primary #{'hide' if @domain.competitors.count == Domain::MAX_COMPETITORS}", remote: true) %>
     <table class="table">
       <thead>
         <tr>

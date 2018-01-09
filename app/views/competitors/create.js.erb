@@ -5,4 +5,7 @@
 <% else %>
   $('#create-competitor').modal('hide');
   $('#competitor-lists').append('<%= escape_javascript render('domains/competitor_row', competitor: @competitor) %>');
+  <% if @competitor.position == 2 %>
+    $('#add-competitor-button').addClass('hide');
+  <% end %>
 <% end %>
