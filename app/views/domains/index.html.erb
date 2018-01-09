@@ -1,16 +1,14 @@
 <div class="row">
   <div class="col-md-12">
     <h3>Domain</h3>
-    <%= link_to 'Add Domain', new_domain_path, class: 'btn btn-primary' %>
-    <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
     <table class="table">
       <thead>
         <tr>
+          <th style="width: 10%;">ID</th>
           <th>Name</th>
-          <th style="width: 15%;"></th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="domain-lists">
         <%= render partial: 'row', collection: @domains, as: :domain %>
       </tbody>
     </table>

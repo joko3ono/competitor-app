@@ -1,4 +1,6 @@
 class Domain < ApplicationRecord
+  MAX_COMPETITORS = 2
+
   has_many :competitors
 end
 

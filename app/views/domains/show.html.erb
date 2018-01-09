@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-12">
+    <h3><%= "Competitor #{@domain.name}" %></h3>
+    <%= link_to('Add Competitor', new_competitor_path(domain_id: @domain.id), class: 'btn btn-primary', remote: true) if @domain.competitors.count < Domain::MAX_COMPETITORS %>
+    <table class="table">
+      <thead>
+        <tr>
+          <th style="width: 10%;">ID</th>
+          <th>Name</th>
+          <th>Business</th>
+        </tr>
+      </thead>
+      <tbody id="competitor-lists">
+        <%= render partial: 'competitor_row', collection: @domain.competitors, as: :competitor %>
+      </tbody>
+    </table>
+  </div>
+</div>

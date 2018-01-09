@@ -40,7 +40,7 @@ gem 'devise', '4.4.0'
 # gem 'capistrano-rails', group: :development
 
 # In place editing
-gem 'best_in_place', '~> 3.0.1'
+gem 'best_in_place', '3.1.1'
 gem 'jquery-rails', '4.3.1'
 
 group :development, :test do

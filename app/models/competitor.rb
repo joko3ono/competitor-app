@@ -1,5 +1,19 @@
 class Competitor < ApplicationRecord
   belongs_to :domain
+
+  validates :name,
+            presence: true,
+            uniqueness: {
+              scope: :domain,
+              message: "Oops. There is another competitor with this website already."
+            }
+  validates :business,
+            presence: true,
+            uniqueness: {
+              scope: :domain,
+              message: "Oops. There is another competitor with this label already."
+            }
+  validates :domain_id, numericality: { only_integer: true }
 end
 
 # == Schema Information

@@ -1,0 +1,8 @@
+<tr>
+  <td><%= competitor.id %></td>
+  <td><%= best_in_place competitor, :name %></td>
+  <td><%= best_in_place competitor, :business %></td>
+  <td>
+    <%= link_to content_tag('span', '', class: 'glyphicon glyphicon-remove-circle'), competitor_path(competitor), method: :delete %>
+  </td>
+</tr>

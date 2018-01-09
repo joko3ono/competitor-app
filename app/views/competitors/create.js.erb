@@ -1,0 +1,8 @@
+<% if @competitor.new_record? %>
+  errorWrapper = $('<div class="alert alert-danger"></div>');
+  errorWrapper.html("<%= escape_javascript raw(@competitor.errors.full_messages.join('<br/>')) %>");
+  $('#create-competitor').find('.error-wrapper').html(errorWrapper);
+<% else %>
+  $('#create-competitor').modal('hide');
+  $('#competitor-lists').append('<%= escape_javascript render('domains/competitor_row', competitor: @competitor) %>');
+<% end %>
