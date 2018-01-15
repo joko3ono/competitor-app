@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :domain do
-    name "MyString"
+    name "www.domain.com"
   end
 end

@@ -7,7 +7,11 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.4'
+gem 'rails', '~> 5.0.2'
+# Rails-ujs are moved to inside rails on rails version ~> 5.1
+# make sure to remove this on upgrading to ~> 5.1
+gem 'rails-ujs', '0.1.0'
+
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server

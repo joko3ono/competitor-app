@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :competitor do
-    domain nil
-    name "MyString"
-    business "MyString"
+    domain
+    name "www.google.com"
+    business "My Business"
     position 1
   end
 end

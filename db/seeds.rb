@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Domains = ['Google', 'Facebook', 'Twitter', 'Github', 'Bitbucket']
+Domains = ['www.google.com', 'www.facebook.com', 'www.twitter.com', 'www.github.com', 'www.bitbucket.org']
 
 Domains.each do |domain|
   puts "creating domain #{domain}"
